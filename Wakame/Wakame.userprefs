@@ -8,11 +8,9 @@
       <File FileName="Gui/LoginDialog.cs" Line="16" Column="51" />
       <File FileName="Wakame.Test/Test.cs" Line="12" Column="9" />
       <File FileName="../../websabelib/websabelib/wesabe-account.cs" Line="58" Column="9" />
-      <File FileName="Other/other.cs" Line="1" Column="1" />
       <File FileName="Gui/ObservableTree.cs" Line="23" Column="26" />
       <File FileName="../../websabelib/websabelib/wesabe-rest.cs" Line="16" Column="39" />
       <File FileName="Wakame.REST/REST.cs" Line="71" Column="1" />
-      <File FileName="Wakame.Comm/MyClass.boo" Line="1" Column="1" />
       <File FileName="../../websabelib/websabelib/wesabe-transaction.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -28,7 +26,10 @@
           <Node name="Wakame.Test" expanded="True">
             <Node name="References" expanded="True" />
           </Node>
-          <Node name="wesabelib" expanded="True" />
+          <Node name="wesabelib" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Properties" expanded="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
@@ -49,4 +50,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" ctype="Workspace" />
+  <AuthorInfo Name="Sergi Mansilla" Email="sergi.mansilla@gmail.com" Copyright="Sergi Mansilla" ctype="AuthorInformation" />
 </Properties>
