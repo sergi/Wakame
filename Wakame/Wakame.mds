@@ -1,0 +1,24 @@
+<Combine fileversion="2.0" name="Wakame">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Wakame" configuration="Debug" />
+      <Entry build="True" name="Wakame.Test" configuration="Debug" />
+      <Entry build="True" name="wesabelib" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Wakame" configuration="Release" />
+      <Entry build="False" name="Wakame.Test" configuration="Release" />
+      <Entry build="True" name="wesabelib" configuration="Release" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Wakame" single="True">
+    <Execute type="None" entry="Wakame" />
+    <Execute type="None" entry="Wakame.Test" />
+    <Execute type="None" entry="wesabelib" />
+  </StartMode>
+  <Entries>
+    <Entry filename="Wakame.mdp" />
+    <Entry filename="Wakame.Test/Wakame.Test.mdp" />
+    <Entry filename="websabelib/wesabelib.csproj" />
+  </Entries>
+</Combine>

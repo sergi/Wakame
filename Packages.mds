@@ -1,0 +1,8 @@
+<Combine name="Packages" fileversion="2.0">
+  <StartMode startupentry="Packages" single="True">
+    <Execute type="None" entry="Packages" />
+  </StartMode>
+  <Entries>
+    <Entry filename="Packages.mdse" />
+  </Entries>
+</Combine>

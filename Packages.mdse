@@ -1,0 +1,32 @@
+<CombineEntry name="Packages" fileversion="2.0" ctype="PackagingProject">
+  <Packages>
+    <Package name="MonoDevelop Project Model Sources">
+      <Builder rootEntry="Wakame.mds" targetFile="Wakame-mds.tar.gz" format="MonoDevelop.Projects.MonoDevelopFileFormat" ctype="SourcesZipPackageBuilder">
+        <ChildEntries>
+          <Entry>Wakame/Wakame.mdp</Entry>
+        </ChildEntries>
+      </Builder>
+    </Package>
+    <Package name="Visual Studio .NET 2005 Sources">
+      <Builder rootEntry="Wakame.mds" targetFile="Wakame-sln.tar.gz" format="MonoDevelop.Prj2Make.MSBuildFileFormat" ctype="SourcesZipPackageBuilder">
+        <ChildEntries>
+          <Entry>Wakame/Wakame.mdp</Entry>
+        </ChildEntries>
+      </Builder>
+    </Package>
+    <Package name="Linux Binaries">
+      <Builder rootEntry="Wakame.mds" targetFile="Wakame-linux.tar.gz" platform="Linux" ctype="BinariesZipPackageBuilder">
+        <ChildEntries>
+          <Entry>Wakame/Wakame.mdp</Entry>
+        </ChildEntries>
+      </Builder>
+    </Package>
+    <Package name="Windows Binaries">
+      <Builder rootEntry="Wakame.mds" targetFile="Wakame-windows.tar.gz" platform="Windows" ctype="BinariesZipPackageBuilder">
+        <ChildEntries>
+          <Entry>Wakame/Wakame.mdp</Entry>
+        </ChildEntries>
+      </Builder>
+    </Package>
+  </Packages>
+</CombineEntry>

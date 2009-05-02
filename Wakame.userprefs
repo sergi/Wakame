@@ -1,0 +1,34 @@
+﻿<UserCombinePreferences version="1.0" filename="/home/sergi/programming/Wakame/Wakame.mds">
+  <Files>
+    <File name="Wakame/MainWindow.cs" line="26" column="10" />
+    <File name="Wakame/Main.cs" line="58" column="2" />
+    <File name="Wakame/WesabeBridge.cs" line="26" column="1" />
+  </Files>
+  <Views>
+    <ViewMemento id="ProjectPad">
+      <Node expanded="True">
+        <Node name="Wakame" expanded="True">
+          <Node name="Resources" expanded="True" />
+          <Node name="UserInterface" expanded="True">
+            <Node name="MainWindow" expanded="True">
+              <Option id="GroupCodeBehind" value="True" />
+              <Option id="ShowVersionControlOverlays" value="True" />
+              <Option id="ShowAllFiles" value="True" />
+            </Node>
+          </Node>
+          <Node name="MainWindow.cs" selected="True" />
+        </Node>
+      </Node>
+    </ViewMemento>
+    <ViewMemento id="ClassPad">
+      <Node expanded="True" />
+    </ViewMemento>
+    <ViewMemento id="ConnectionManagerPad">
+      <Node />
+    </ViewMemento>
+  </Views>
+  <Properties>
+    <Property key="ActiveWindow" value="/home/sergi/programming/Wakame/Wakame/MainWindow.cs" />
+    <Property key="ActiveConfiguration" value="Debug" />
+  </Properties>
+</UserCombinePreferences>

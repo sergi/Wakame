@@ -1,0 +1,70 @@
+
+using System;
+using System.Net;
+using System.Text;
+using System.IO;
+using System.Xml.Linq;
+
+namespace Wakame.REST
+{
+    public class Rest : ICertificatePolicy
+    {
+        static Rest()
+        {
+            //ServicePointManager.ServerCertificateValidationCallback = ValidateServerCertificate;
+        }
+        
+        public bool CheckValidationResult ( 
+              System.Net.ServicePoint srvPoint,
+              System.Security.Cryptography.X509Certificates.X509Certificate certificate,
+              System.Net.WebRequest request,
+              int certificateProblem
+        )
+        {
+            return true;
+        }
+
+
+        // The following method is invoked by the RemoteCertificateValidationDelegate.
+        /*public static bool ValidateServerCertificate(
+              object sender,
+              X509Certificate certificate,
+              X509Chain chain,
+              SslPolicyErrors sslPolicyErrors)
+        {
+            if (sslPolicyErrors == SslPolicyErrors.None &&
+                certificate.Subject == @"CN=www.wesabe.com, OU=Thawte SSL123 certificate, OU=Go to https://www.thawte.com/repository/index.html, OU=Domain Validated, O=www.wesabe.com")
+                return true;
+
+            Console.WriteLine("Certificate error: {0}", sslPolicyErrors);
+
+            // Do not allow this client to communicate with unauthenticated servers.
+            return false;
+        }*/
+
+
+        public static string getAccounts(string user, string password)
+        {
+            // ServicePointManager.CertificatePolicy = new Rest ();
+
+            HttpWebRequest webrequest =
+                (HttpWebRequest)WebRequest.Create("https://www.wesabe.com/accounts.xml");
+            webrequest.KeepAlive = false;
+            webrequest.Method = "GET";
+
+            // I should have been able to use the CredentialCache, 
+            // but the API isn't challenging and requesting auth. 
+            // Failure always turns into a 302 redirected, \
+            // so we add the headers preemptively.
+            webrequest.Headers.Add("Authorization", "Basic " + Convert.ToBase64String(Encoding.ASCII.GetBytes(user+":"+password)));
+            
+            using(HttpWebResponse response = (HttpWebResponse)webrequest.GetResponse())
+            {
+                StreamReader reader = new StreamReader(response.GetResponseStream());  
+                string output = reader.ReadToEnd();
+                Console.Write(output);
+                return output;
+            }
+        }
+    }
+}

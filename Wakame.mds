@@ -1,0 +1,24 @@
+<Combine name="Wakame" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Wakame" configuration="Debug" />
+      <Entry build="True" name="Packages" configuration="" />
+      <Entry build="True" name="WakameTranslation" configuration="" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Wakame" configuration="Release" />
+      <Entry build="True" name="Packages" configuration="" />
+      <Entry build="True" name="WakameTranslation" configuration="" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Wakame" single="True">
+    <Execute type="None" entry="Wakame" />
+    <Execute type="None" entry="Packages" />
+    <Execute type="None" entry="WakameTranslation" />
+  </StartMode>
+  <Entries>
+    <Entry filename="Wakame/Wakame.mdp" />
+    <Entry filename="Packages.mdse" />
+    <Entry filename="WakameTranslation/WakameTranslation.mdse" />
+  </Entries>
+</Combine>
