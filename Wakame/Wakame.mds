@@ -1,4 +1,9 @@
-<Combine fileversion="2.0" name="Wakame">
+<Combine fileversion="2.0" description="Wakame is a Gtk application that acts as a frontend to Wesabe and adds some extra functionality such as complex filters, graphs and persistence." name="Wakame">
+  <Policies>
+    <DotNetNamingPolicy DirectoryNamespaceAssociation="PrefixedHierarchical" ResourceNamePolicy="MSBuild" />
+    <StandardHeader inheritsSet="LGPLv2License" />
+    <TextStylePolicy FileWidth="120" TabWidth="4" TabsToSpaces="True" NoTabsAfterNonTabs="False" RemoveTrailingWhitespace="True" EolMarker="Unix" />
+  </Policies>
   <Configurations active="Debug">
     <Configuration name="Debug" ctype="CombineConfiguration">
       <Entry build="True" name="Wakame" configuration="Debug" />
