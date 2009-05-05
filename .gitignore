@@ -1,7 +1,13 @@
 Wakame/bin/
+Wakame/build/
 Wakame/Wakame.REST/bin/
+Wakame/Wakame.REST/build/
 Wakame/Wakame.Test/bin/
+Wakame/Wakame.Test/bin/
+Wakame/websabelib/bin/
 Wakame/websabelib/bin/
 *.pidb
 *~
-~
+*.userprefs
+*.usertasks
+*.md.pc
